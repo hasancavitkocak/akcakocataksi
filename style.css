@@ -450,6 +450,35 @@ button {
   color: #FFFFFF;
 }
 
+.btn-whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #25D366;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 1.05rem;
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+@media (min-width: 576px) {
+  .btn-whatsapp {
+    width: auto;
+    font-size: 1.15rem;
+    padding: 16px 24px;
+  }
+}
+
+.btn-whatsapp:hover {
+  background-color: #20BA5A;
+  color: #FFFFFF;
+}
+
 .hero-highlights {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1171,4 +1200,139 @@ button {
 
 .sticky-call-btn:active {
   background-color: var(--call-green-hover);
+}
+
+.sticky-call-btn-split {
+  width: 50%;
+  background-color: var(--call-green);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.sticky-call-btn-split:active {
+  background-color: var(--call-green-hover);
+}
+
+.sticky-whatsapp-btn {
+  width: 50%;
+  background-color: #25D366;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.sticky-whatsapp-btn:active {
+  background-color: #20BA5A;
+}
+
+/* Doğrudan Yanıt / Google Snippet Bilgi Bölümü */
+.direct-answer-section {
+  background-color: #FFFFFF;
+  padding: 36px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.answer-card {
+  background: #FFFBEB;
+  border: 2px solid var(--primary);
+  border-radius: var(--radius-md);
+  padding: 22px 20px;
+}
+
+@media (min-width: 768px) {
+  .answer-card {
+    padding: 28px 32px;
+  }
+}
+
+.answer-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+@media (min-width: 576px) {
+  .answer-card-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.answer-card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--primary);
+  color: var(--dark-bg);
+  font-weight: 800;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  width: fit-content;
+}
+
+.answer-card-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--dark-bg);
+}
+
+.answer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+@media (min-width: 576px) {
+  .answer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .answer-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.answer-item {
+  background-color: #FFFFFF;
+  border: 1px solid #FDE68A;
+  border-radius: var(--radius-sm);
+  padding: 14px;
+}
+
+.answer-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 4px;
+}
+
+.answer-val {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--dark-bg);
+}
+
+.answer-val a {
+  color: var(--primary-dark);
+  text-decoration: underline;
 }
